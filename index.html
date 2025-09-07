@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caio Nutricionista - Nutrição Personalizada</title>
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Custom Styles -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -65,7 +62,6 @@
 </head>
 <body class="text-slate-300">
 
-    <!-- Header -->
     <header class="py-4 px-6 md:px-12 flex justify-between items-center sticky top-0 bg-slate-900/80 backdrop-blur-sm z-50 border-b border-slate-800">
         <h1 class="text-2xl font-bold text-white">Caio <span class="gradient-text">Nutri</span></h1>
         <nav class="hidden md:flex items-center space-x-6">
@@ -78,11 +74,9 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="relative text-center py-20 md:py-32 px-4 overflow-hidden">
              <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10"></div>
              <div class="absolute inset-0 bg-slate-900 opacity-50"></div>
-             <!-- Imagem de fundo removida para um visual mais limpo -->
              <div class="absolute inset-0 bg-cover bg-center"></div>
 
             <div class="relative z-20 max-w-5xl mx-auto grid md:grid-cols-2 items-center gap-12">
@@ -97,24 +91,18 @@
                         <a href="#plans" class="btn btn-primary text-lg">Ver Planos</a>
                     </div>
                 </div>
-                <!-- NOVO BLOCO DA IMAGEM COM EFEITO -->
                 <div class="flex justify-center items-center">
-                    <!-- O contêiner define o tamanho total do efeito. Mantenha w-96 e h-96 para um círculo perfeito. -->
                     <div class="relative w-96 h-96 group">
-                        <!-- Anéis de fundo -->
                         <div class="absolute inset-0 rounded-full bg-cyan-500/10 transition-transform duration-500 group-hover:scale-105"></div>
                         <div class="absolute inset-[10%] rounded-full bg-cyan-400/10 transition-transform duration-300 group-hover:scale-110"></div>
                         <div class="absolute inset-[20%] rounded-full bg-teal-400/20"></div>
 
-                        <!-- A imagem é colocada sobre os anéis -->
-                        <!-- A classe 'scale-150' aumenta o tamanho da imagem em 50% sem afetar os anéis. -->
                         <img src="foto_caio.png" alt="Retrato de Caio, o nutricionista" class="relative w-full h-full object-cover transform scale-150" style="mask-image: radial-gradient(circle at center, black 60%, transparent 85%); -webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 85%);">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
         <section id="about" class="py-20 px-4 sm:px-6 lg:px-8">
             <div class="max-w-5xl mx-auto">
                 <h2 class="section-title">Prazer, sou o <span class="gradient-text">Caio!</span></h2>
@@ -128,7 +116,6 @@
             </div>
         </section>
 
-        <!-- Process Section -->
         <section id="process" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
             <div class="max-w-6xl mx-auto">
                 <h2 class="section-title">Como funciona o <span class="gradient-text">acompanhamento?</span></h2>
@@ -142,13 +129,11 @@
             </div>
         </section>
 
-        <!-- Testimonials Section -->
         <section id="testimonials" class="py-20 px-4 sm:px-6 lg:px-8">
             <div class="max-w-6xl mx-auto">
                 <h2 class="section-title">O que meus pacientes <span class="gradient-text">dizem...</span></h2>
                 <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
                     
-                    <!-- Depoimento 1 -->
                     <div class="card">
                         <img src="paciente1_matheus.png" alt="Feedback de cliente 1" class="rounded-lg mb-6 shadow-lg">
                         <div class="flex-grow">
@@ -159,7 +144,6 @@
                         <p class="text-right mt-4 font-bold text-white">- Matheus Ambrosio - Tenista</p>
                     </div>
 
-                    <!-- Depoimento 2 -->
                     <div class="card">
                         <img src="lucas_ferrao.png" alt="Feedback de cliente 2" class="rounded-lg mb-6 shadow-lg">
                         <div class="flex-grow">
@@ -170,7 +154,6 @@
                         <p class="text-right mt-4 font-bold text-white">Lucas Ferrão - Lutador</p>
                     </div>
 
-                    <!-- Depoimento 3 -->
                     <div class="card">
                         <img src="lutador_2.jpg" alt="Feedback de cliente 3" class="rounded-lg mb-6 shadow-lg">
                         <div class="flex-grow">
@@ -185,69 +168,85 @@
             </div>
         </section>
 
-        <!-- Plans Section -->
         <section id="plans" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
             <div class="max-w-7xl mx-auto">
                 <h2 class="section-title">Planos <span class="gradient-text">Disponíveis</span></h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
                     
-                    <!-- Plan Bronze -->
-                    <div class="card text-center">
+                    <div class="card text-center relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-yellow-400 text-slate-900 px-4 py-1 text-sm font-bold transform translate-x-1/4 -translate-y-1/4 rotate-45">Promoção!</div>
                         <h3 class="text-2xl font-bold text-white">Bronze</h3>
                         <p class="gradient-text font-semibold mb-4">Mensal</p>
                         <div class="my-4">
-                            <span class="text-4xl font-bold text-white">R$199</span>
+                            <span class="text-xl line-through text-slate-400 mr-2">R$199</span>
+                            <span class="text-4xl font-bold text-green-400">R$159</span>
                             <span class="text-slate-400">/mês</span>
                         </div>
                         <p class="mb-6 flex-grow text-left">Ideal para quem quer experimentar o processo e entender como a nutrição pode transformar sua rotina.</p>
-                        <ul class="space-y-3 mb-8 flex-grow text-left"><li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>1 consulta de atendimento</li><li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>1 avaliação corporal</li><li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Feedback com orientações</li><li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Plano alimentar personalizado</li></ul>
-                        <a href="https://wa.me/5521969489421?text=Tomei%20a%20decis%C3%A3o%20e%20quero%20come%C3%A7ar%20minha%20transforma%C3%A7%C3%A3o%20agora%20mesmo!%20Me%20fale%20mais%20sobre%20o%20plano%20bronze." target="_blank" class="btn btn-primary mt-auto">Quero o Plano Bronze</a>
+                        <ul class="space-y-3 mb-8 flex-grow text-left">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>1 consulta de atendimento</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>1 avaliação corporal</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Feedback com orientações</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Plano alimentar personalizado</li>
+                        </ul>
+                        <a href="https://wa.me/5521969489421?text=Tomei%20a%20decis%C3%A3o%20e%20quero%20come%C3%A7ar%20minha%20transforma%C3%A7%C3%A3o%20agora%20mesmo!%20Me%20fale%20mais%20sobre%20o%20plano%20bronze." target="_blank" class="btn btn-primary mt-auto">Quero o Plano Bronze com Desconto</a>
                     </div>
 
-                    <!-- Plan Prata (Featured) -->
                     <div class="card text-center ring-2 ring-cyan-400 relative overflow-hidden transform scale-105">
                         <div class="absolute top-0 right-0 bg-cyan-400 text-slate-900 px-4 py-1 text-sm font-bold transform translate-x-1/4 -translate-y-1/4 rotate-45">Popular</div>
                         <h3 class="text-2xl font-bold text-white">Prata</h3>
                         <p class="gradient-text font-semibold mb-4">Trimestral</p>
                         <div class="my-4">
-                            <span class="text-4xl font-bold text-white">R$499</span>
+                            <span class="text-xl line-through text-slate-400 mr-2">R$499</span>
+                            <span class="text-4xl font-bold text-green-400">R$399</span>
                             <span class="text-slate-400">/trimestre</span>
                         </div>
                         <p class="mb-6 flex-grow text-left">Pensado para quem sabe que resultado vem com constância. O plano ideal para criar ritmo e engajamento.</p>
-                        <ul class="space-y-3 mb-8 flex-grow text-left"><li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>1 consulta por mês</li><li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>3 avaliações corporais</li><li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>3 feedbacks com ajustes</li><li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Plano alimentar personalizado</li><li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Materiais de Apoio</li></ul>
-                        <a href="https://wa.me/5521969489421?text=Tomei%20a%20decis%C3%A3o%20e%20quero%20come%C3%A7ar%20minha%20transforma%C3%A7%C3%A3o%20agora%20mesmo!%20Me%20fale%20mais%20sobre%20o%20plano%20prata." target="_blank" class="btn btn-primary mt-auto">Quero o Plano Prata</a>
+                        <ul class="space-y-3 mb-8 flex-grow text-left">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>1 consulta por mês</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>3 avaliações corporais</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>3 feedbacks com ajustes</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Plano alimentar personalizado</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Materiais de Apoio</li>
+                        </ul>
+                        <a href="https://wa.me/5521969489421?text=Tomei%20a%20decis%C3%A3o%20e%20quero%20come%C3%A7ar%20minha%20transforma%C3%A7%C3%A3o%20agora%20mesmo!%20Me%20fale%20mais%20sobre%20o%20plano%20prata." target="_blank" class="btn btn-primary mt-auto">Quero o Plano Prata com Desconto</a>
                     </div>
                     
-                    <!-- Plan Ouro -->
-                    <div class="card text-center">
+                    <div class="card text-center relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-yellow-400 text-slate-900 px-4 py-1 text-sm font-bold transform translate-x-1/4 -translate-y-1/4 rotate-45">Promoção!</div>
                         <h3 class="text-2xl font-bold text-white">Ouro</h3>
                         <p class="gradient-text font-semibold mb-4">Semestral</p>
                         <div class="my-4">
-                            <span class="text-4xl font-bold text-white">R$899</span>
+                            <span class="text-xl line-through text-slate-400 mr-2">R$899</span>
+                            <span class="text-4xl font-bold text-green-400">R$699</span>
                             <span class="text-slate-400">/semestre</span>
                         </div>
                         <p class="mb-6 flex-grow text-left">Para quem leva a saúde a sério e quer atingir o máximo desempenho com segurança e estratégia.</p>
-                        <ul class="space-y-3 mb-8 flex-grow text-left"><li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>2 consultas por mês</li><li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>6 avaliações corporais</li><li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Feedbacks com ajustes Quinzenais</li><li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Plano alimentar personalizado</li><li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Materiais e Suporte no WhatsApp</li></ul>
-                        <a href="https://wa.me/5521969489421?text=Tomei%20a%20decis%C3%A3o%20e%20quero%20come%C3%A7ar%20minha%20transforma%C3%A7%C3%A3o%20agora%20mesmo!%20Me%20fale%20mais%20sobre%20o%20plano%20ouro." target="_blank" class="btn btn-primary mt-auto">Quero o Plano Ouro</a>
+                        <ul class="space-y-3 mb-8 flex-grow text-left">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>2 consultas por mês</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>6 avaliações corporais</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Feedbacks com ajustes Quinzenais</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Plano alimentar personalizado</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Materiais e Suporte no WhatsApp</li>
+                        </ul>
+                        <a href="https://wa.me/5521969489421?text=Tomei%20a%20decis%C3%A3o%20e%20quero%20come%C3%A7ar%20minha%20transforma%C3%A7%C3%A3o%20agora%20mesmo!%20Me%20fale%20mais%20sobre%20o%20plano%20ouro." target="_blank" class="btn btn-primary mt-auto">Quero o Plano Ouro com Desconto</a>
                     </div>
                 </div>
             </div>
         </section>
         
-        <!-- Final CTA -->
         <section class="py-20 px-4 text-center">
              <div class="max-w-3xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-white">Chegou a hora de priorizar a pessoa mais importante da sua vida: <span class="gradient-text">você!</span></h2>
-                <p class="mt-4 text-lg text-slate-300">Pare de adiar os seus objetivos. O plano ideal já existe - agora só falta sua decisão.</p>
-                <div class="mt-8">
-                    <a href="https://wa.me/5521969489421?text=Tomei%20a%20decis%C3%A3o%20e%20quero%20come%C3%A7ar%20minha%20transforma%C3%A7%C3%A3o%20agora%20mesmo!%20Me%20fale%20mais%20sobre%20os%20planos." target="_blank" class="btn btn-primary text-xl">Começar minha transformação</a>
-                </div>
+                 <h2 class="text-3xl md:text-4xl font-extrabold text-white">Chegou a hora de priorizar a pessoa mais importante da sua vida: <span class="gradient-text">você!</span></h2>
+                 <p class="mt-4 text-lg text-slate-300">Pare de adiar os seus objetivos. O plano ideal já existe - agora só falta sua decisão.</p>
+                 <div class="mt-8">
+                     <a href="https://wa.me/5521969489421?text=Tomei%20a%20decis%C3%A3o%20e%20quero%20come%C3%A7ar%20minha%20transforma%C3%A7%C3%A3o%20agora%20mesmo!%20Me%20fale%20mais%20sobre%20os%20plano." target="_blank" class="btn btn-primary text-xl">Começar minha transformação</a>
+                 </div>
              </div>
         </section>
 
     </main>
 
-    <!-- Footer -->
     <footer class="bg-slate-800/50 border-t border-slate-800 text-center py-8 px-4">
         <p class="text-slate-400">&copy; 2024 Caio Nutricionista. Todos os direitos reservados.</p>
         <p class="text-slate-500 text-sm mt-2">Página criada com base em material fornecido.</p>
