@@ -58,6 +58,18 @@
             transform: scale(1.05);
             box-shadow: 0 0 20px rgba(45, 212, 191, 0.5);
         }
+        /* Estilo do novo botão secundário */
+        .btn-secondary {
+            background-color: transparent;
+            color: #2dd4bf;
+            border: 2px solid #2dd4bf;
+        }
+        .btn-secondary:hover {
+            background-color: #2dd4bf;
+            color: #0f172a;
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(45, 212, 191, 0.4);
+        }
     </style>
 </head>
 <body class="text-slate-300">
@@ -75,9 +87,9 @@
 
     <main>
         <section class="relative text-center py-20 md:py-32 px-4 overflow-hidden">
-             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10"></div>
-             <div class="absolute inset-0 bg-slate-900 opacity-50"></div>
-             <div class="absolute inset-0 bg-cover bg-center"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10"></div>
+              <div class="absolute inset-0 bg-slate-900 opacity-50"></div>
+              <div class="absolute inset-0 bg-cover bg-center"></div>
 
             <div class="relative z-20 max-w-5xl mx-auto grid md:grid-cols-2 items-center gap-12">
                 <div class="text-left">
@@ -87,8 +99,10 @@
                     <p class="mt-6 text-lg md:text-xl text-slate-300 max-w-2xl">
                         Transforme sua saúde com um plano alimentar feito sob medida para você. Seja você um atleta ou uma pessoa vivendo com diabetes, o foco é um só: resultados reais.
                     </p>
-                    <div class="mt-10">
-                        <a href="#plans" class="btn btn-primary text-lg">Ver Planos</a>
+                    <!-- BOTÕES ATUALIZADOS AQUI -->
+                    <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                        <a href="#plans" class="btn btn-primary text-lg">Ver Planos Completos</a>
+                        <a href="https://wa.me/5521969489421?text=Quero%20minha%20dieta%20personalizada%20por%20R%24%2019,99" target="_blank" class="btn btn-secondary text-lg">Receba sua dieta personalizada por R$ 19,99</a>
                     </div>
                 </div>
                 <div class="flex justify-center items-center">
@@ -125,13 +139,14 @@
                     <div class="card flex items-start space-x-6"><div class="text-4xl font-bold gradient-text">03</div><div><h3 class="text-xl font-bold text-white mb-2">Plano Personalizado</h3><p>Entrego um plano 100% adaptado ao seu dia a dia, com flexibilidade e orientação clara para o seu sucesso.</p></div></div>
                     <div class="card flex items-start space-x-6"><div class="text-4xl font-bold gradient-text">04</div><div><h3 class="text-xl font-bold text-white mb-2">Acompanhamento</h3><p>A cada 15 dias avaliamos sua evolução e realizamos ajustes. O foco é garantir progresso constante.</p></div></div>
                     <div class="card flex items-start space-x-6"><div class="text-4xl font-bold gradient-text">05</div><div><h3 class="text-xl font-bold text-white mb-2">Materiais Educativos</h3><p>Receba conteúdos exclusivos e explicativos para entender o "porquê" de cada etapa do seu plano.</p></div></div>
+                     <div class="card flex items-start space-x-6"><div class="text-4xl font-bold gradient-text">06</div><div><h3 class="text-xl font-bold text-white mb-2">Suporte Contínuo</h3><p>Estou disponível via WhatsApp para tirar dúvidas e te manter motivado durante todo o processo.</p></div></div>
                 </div>
             </div>
         </section>
 
         <section id="testimonials" class="py-20 px-4 sm:px-6 lg:px-8">
             <div class="max-w-6xl mx-auto">
-                <h2 class="section-title">O que meus pacientes <span class="gradient-text">dizem...</span></h2>
+                <h2 class="section-title">O que meus pacientes de <span class="gradient-text">Acompanhamento</span> dizem...</h2>
                 <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
                     
                     <div class="card">
@@ -168,9 +183,51 @@
             </div>
         </section>
 
-        <section id="plans" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
+        <!-- NOVA SEÇÃO DE DEPOIMENTOS (PLANO INICIAL) -->
+        <section id="initial-plan-testimonials" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="section-title">O primeiro passo para sua <span class="gradient-text">transformação</span></h2>
+                 <p class="text-center text-lg text-slate-300 -mt-8 mb-12 max-w-3xl mx-auto">Veja o que dizem as pessoas que começaram pelo Plano Inicial de R$ 19,99.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Depoimento 1 -->
+                    <div class="card text-center">
+                        <div class="text-5xl gradient-text mb-4">“</div>
+                        <blockquote class="flex-grow text-slate-300 mb-4">
+                            "Eu não tinha tempo pra nada. O plano inicial me deu um norte, com dicas de marmitas que salvaram minha semana. Foi o empurrão que eu precisava!"
+                        </blockquote>
+                        <p class="mt-4 font-bold text-white">- Juan Fonseca.</p>
+                    </div>
+                    <!-- Depoimento 2 -->
+                    <div class="card text-center">
+                        <div class="text-5xl gradient-text mb-4">“</div>
+                        <blockquote class="flex-grow text-slate-300 mb-4">
+                           "Achei que dieta era passar fome. O material é super prático, com comida de verdade e sem frescura. Já perdi 2kg em 3 semanas só com as dicas do e-book."
+                        </blockquote>
+                        <p class="mt-4 font-bold text-white">- Brenna Fonseca.</p>
+                    </div>
+                    <!-- Depoimento 3 -->
+                    <div class="card text-center">
+                        <div class="text-5xl gradient-text mb-4">“</div>
+                        <blockquote class="flex-grow text-slate-300 mb-4">
+                            "Comprei sem muita expectativa, mas me surpreendi. A lista de compras é muito útil e o plano é fácil de seguir. Me motivou a querer ir além e contratar o plano completo."
+                        </blockquote>
+                        <p class="mt-4 font-bold text-white">- Letícia Albuquerque.</p>
+                    </div>
+                     <!-- Depoimento 4 -->
+                    <div class="card text-center">
+                        <div class="text-5xl gradient-text mb-4">“</div>
+                        <blockquote class="flex-grow text-slate-300 mb-4">
+                            "Excelente custo-benefício! As dicas sobre comportamento alimentar mudaram minha relação com a comida. É muito mais que uma simples dieta, é um guia prático."
+                        </blockquote>
+                        <p class="mt-4 font-bold text-white">- Carla Rodrigues</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="plans" class="py-20 px-4 sm:px-6 lg:px-8">
             <div class="max-w-7xl mx-auto">
-                <h2 class="section-title">Planos <span class="gradient-text">Disponíveis</span></h2>
+                <h2 class="section-title">Planos de <span class="gradient-text">Acompanhamento Completo</span></h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
                     
                     <div class="card text-center relative overflow-hidden">
